@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Rock Paper Scissors Game</h1>
+        <p>Rock Paper Scissors is a game of wits, two players secretly choose one of the three options and on the count of three both then revel their choice.</p>
+        <p>Whether you win or not depends on the choices you both made:</p>
+        <ul>
+            <li>Rock beats Scissors</li>
+            <li>Scissors beats Paper</li>
+            <li>Paper beats Rock</li>
+        </ul>
+        <p>Let's see this in action!</p>
+            <form action="/" method="post">
+                <label for="player-1">Player 1</label>
+                <input type="text" name="player-1" id="player-1">
+                <label for="choice">Type Rock Paper or Scissors</label>
+                <input type="text" name="player-1-choice" id="player-1-choice">
+                <label for="player-2">Player 2</label>
+                <input type="text" name="player-2" id="player-2">
+                <label for="choice">Type Rock Paper or Scissors</label>
+                <input type="text" name="player-2-choice" id="player-2-choice">
+                <input type="submit" value="Check Winner">
+            </form>
+
+        <p>Now that you understand the rules, why not try <a href = "/play">take on the computer</a>?</p>
+{% endblock %}

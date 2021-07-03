@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Rock Paper Scissors Game</h1>
+        <p>Now that you understand the game, take on the almighty computer!</p>
+            <form action="/play" method="post">
+                <label for="choice">Choose Rock Paper or Scissors</label>
+                <select name="choice" id="choice">
+                  <option value="rock">Rock</option>
+                  <option value="paper">Paper</option>
+                  <option value="scissors">Scissors</option>
+                <input type="submit" value="See if you beat the Computer">
+            </form>
+{% endblock %}

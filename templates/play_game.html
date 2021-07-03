@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Rock Paper Scissors Game</h1>
+
+    {{game.match()}}
+
+    <p>Replay?</p>
+    <a href = '/play'>Vs Computer</a>
+    <a href = '/'>Vs Player</a>
+{% endblock %}
