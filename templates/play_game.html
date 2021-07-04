@@ -2,9 +2,14 @@
 {% block content %}
     <h1>Rock Paper Scissors Game</h1>
 
-    {{game.match()}}
+    <section id="game-result">
+        {{game.match()}}
+    </section>
 
     <p>Replay?</p>
-    <a href = '/play'>Vs Computer</a>
-    <a href = '/'>Vs Player</a>
+        <div id="replay">
+            <a href = '/play'>Vs Computer</a>
+            <a href = '/'>Vs Player</a>
+            <a href="/">Game Rules</a>
+        </div>
 {% endblock %}

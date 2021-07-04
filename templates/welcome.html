@@ -1,25 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
+<main>
     <h1>Rock Paper Scissors Game</h1>
         <p>Rock Paper Scissors is a game of wits, two players secretly choose one of the three options and on the count of three both then revel their choice.</p>
         <p>Whether you win or not depends on the choices you both made:</p>
-        <ul>
-            <li>Rock beats Scissors</li>
-            <li>Scissors beats Paper</li>
-            <li>Paper beats Rock</li>
-        </ul>
+        <img src="static/images/Rock Paper Scissors.png" alt="Image showing that Rock beats Scissors, Scissors beats Paper, and Paper beats Rock " width="250" height="250" class="image">
         <p>Let's see this in action!</p>
             <form action="/" method="post">
-                <label for="player-1">Player 1</label>
-                <input type="text" name="player-1" id="player-1">
-                <label for="choice">Type Rock Paper or Scissors</label>
-                <input type="text" name="player-1-choice" id="player-1-choice">
-                <label for="player-2">Player 2</label>
-                <input type="text" name="player-2" id="player-2">
-                <label for="choice">Type Rock Paper or Scissors</label>
-                <input type="text" name="player-2-choice" id="player-2-choice">
-                <input type="submit" value="Check Winner">
+                <section class="player-1">
+                    <label for="player-1">Player 1 &nbsp</label>
+                    <input type="text" name="player-1" id="player-1">
+                    <div class="player-1-choice">
+                        <label for="choice">Type Rock Paper or Scissors  &nbsp</label>
+                        <input type="text" name="player-1-choice" id="player-1-choice">
+                    </div>
+                </section>
+                <section class="player-2">
+                    <label for="player-2">Player 2 &nbsp</label>
+                    <input type="text" name="player-2" id="player-2">
+                    <div class="player-2-choice">
+                        <label for="choice">Type Rock Paper or Scissors  &nbsp</label>
+                        <input type="text" name="player-2-choice" id="player-2-choice">
+                    </div>
+                </section>
+                <input type="submit" value="Check Winner" id="submit-button">
             </form>
-
         <p>Now that you understand the rules, why not try <a href = "/play">take on the computer</a>?</p>
+        <img src="static/images/AngryComputer.jpeg" alt="Image of a woman about to hit a computer with a hammer" width="400" height="250" class="image">
+</main>
 {% endblock %}
